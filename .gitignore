@@ -1,0 +1,49 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+.env
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Build / outputs ---
+build/
+dist/
+*.log
+*.tmp
+
+# --- Data ---
+data/
+raw_data/
+videos/
+images_raw/
+captures/
+
+# --- Results ---
+results/
+plots/
+figures/generated/
+
+# --- CAD ---
+*.stl
+*.step
+*.iges
+
+# --- OS / Editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- LaTeX ---
+*.aux
+*.bbl
+*.blg
+*.out
+*.toc
+*.synctex.gz
+

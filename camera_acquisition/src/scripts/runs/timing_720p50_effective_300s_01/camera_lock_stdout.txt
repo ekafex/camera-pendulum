@@ -1,0 +1,13 @@
+[ OK ] width: 1280
+[ OK ] height: 720
+[ OK ] pixelformat: MJPG
+[ OK ] fps: 60.000
+[ OK ] auto_exposure: 1
+[ OK ] exposure_dynamic_framerate: 0
+[ OK ] exposure_time_absolute: 157
+[ OK ] gain: 0
+[ OK ] white_balance_automatic: 0
+[ OK ] white_balance_temperature: 4600
+[ OK ] power_line_frequency: 1
+
+Saved V4L2 snapshot to: runs/timing_720p50_effective_300s_01/v4l2_snapshot
