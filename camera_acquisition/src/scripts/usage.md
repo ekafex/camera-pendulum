@@ -23,23 +23,29 @@ You should see a report with [ OK ] lines and a runs/camera_lock_YYYYMMDD_HHMMSS
 check by running:
 
 ```bash
-python3 scripts/validate_timing.py \
-  --dev /dev/video2 \
-  --index 2 \
-  --duration 60 \
-  --out runs/timing_720p60_60s_01
-
+python scripts/validate_timing.py --dev /dev/video2 --index 2 --width 1280 --height 720 --requested-fps 60 --no-lock --warmup-frames 100 --duration 60 --out scripts/runs/timing_720p_req60_60s_v1
 ```
 
 Then do **5 minutes** test:
 
 ```bash
-python3 scripts/validate_timing.py --dev /dev/video2 --index 2 --duration 300 --out runs/timing_720p60_5min_01
+python scripts/validate_timing.py --dev /dev/video2 --index 2 --width 1280 --height 720 --requested-fps 60 --no-lock --warmup-frames 100 --duration 300 --out scripts/runs/timing_720p_req60_300s_v1
+
 ```
 
 Then do **10 minutes stress** (while running a CPU load in another terminal):
 
 ```bash
-python3 scripts/validate_timing.py --dev /dev/video2 --index 2 --duration 600 --out runs/timing_720p60_10min_stress_01
+python scripts/validate_timing.py --dev /dev/video2 --index 2 --width 1280 --height 720 --requested-fps 60 --no-lock --warmup-frames 100 --duration 600 --out scripts/runs/timing_720p_req60_600s_v1
+```
+
+
+
+### Usage of the  scripts/plot_timing_runs.py
+
+Generate plots (both “vs inferred” and “vs requested”)
+
+```bash
+python scripts/plot_timing_runs.py --runs scripts/runs/timing_720p_req60_60s_v1 --requested-fps 60
 ```
 

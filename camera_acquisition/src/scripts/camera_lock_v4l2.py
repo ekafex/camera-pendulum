@@ -64,7 +64,7 @@ def require_v4l2_ctl() -> None:
     if shutil.which("v4l2-ctl") is None:
         raise RuntimeError(
             "v4l2-ctl not found. Install v4l-utils.\n"
-            "Debian/Ubuntu: sudo apt-get install v4l-utils"
+            "Debian/Ubuntu: sudo apt install v4l-utils"
         )
 
 
