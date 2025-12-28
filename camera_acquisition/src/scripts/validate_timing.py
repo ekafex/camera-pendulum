@@ -237,7 +237,7 @@ def main() -> int:
     ts_path = outdir / "timestamps.csv"
     with ts_path.open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["frame_index", "read_ok", "t_before_read_ns", "t_after_read_ns"])
+        w.writerow(["# frame_index", "read_ok", "t_before_read_ns", "t_after_read_ns"])
         for r in rows:
             w.writerow([r[0], int(bool(r[1])), r[2], r[3]])
 

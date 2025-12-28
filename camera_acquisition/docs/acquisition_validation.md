@@ -134,6 +134,14 @@ acquisition clock is internally coherent and stable.
 - Histogram: Δt distribution
 - Optional: cumulative time error vs index (drift)
 
+<img src="/home/drago/PROJECTS/INSTRUMENTS/USB_CAMERA/Camera_Pendulum/camera_acquisition/docs/frame_dist.png" style="zoom:70%;" />
+
+This figure shows the inter-frame interval distributions under three system load conditions. While the dominant peak at ~20 ms reflects the camera’s internal 50 Hz cadence, increasing system load introduces heavy-tailed timing jitter. Under mixed CPU and IO stress, the distribution becomes broad and bursty, demonstrating that host scheduling, not the camera, dominates timing deviations. This motivates explicit timestamp usage in downstream tracking.
+
+
+
+
+
 ## 7. Conclusions
 - Is 1280×720 @ 60 fps stable enough for tracking? (Yes/No + justification)
 - Recommended backend for the project (OpenCV vs alternative)

@@ -1,4 +1,4 @@
-frame_index,read_ok,t_before_read_ns,t_after_read_ns
+# frame_index,read_ok,t_before_read_ns,t_after_read_ns
 0,1,44081877242032,44081897208340
 1,1,44081897217057,44081917589393
 2,1,44081917593806,44081937338678
