@@ -1,0 +1,22 @@
+{
+  "timestamp_local": "2025-12-27T20:38:25.057646",
+  "platform": {
+    "python": "3.12.12 | packaged by conda-forge | (main, Oct 22 2025, 23:25:55) [GCC 14.3.0]",
+    "os": "Linux-6.1.0-41-amd64-x86_64-with-glibc2.36",
+    "machine": "x86_64"
+  },
+  "capture": {
+    "dev": "/dev/video2",
+    "index": 2,
+    "width_req": 1280,
+    "height_req": 720,
+    "fps_req": 60.0,
+    "duration_s": 600.0,
+    "backend": "opencv_CAP_V4L2",
+    "timestamp_origin": "host_monotonic_ns",
+    "timestamp_definition": {
+      "t_before_read_ns": "monotonic_ns immediately before cap.read()",
+      "t_after_read_ns": "monotonic_ns immediately after cap.read() (primary receive timestamp)"
+    }
+  }
+}
